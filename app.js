@@ -24,8 +24,8 @@ mongoose.connect('mongodb://huyugui.eicp.net/restify')
 restify.serve(router, mongoose.model('Student'));
 restify.serve(router, mongoose.model('Teacher'));
 
-app.use(router);
+app.use(routes);
 
-app.listen(3000, function () {
-  console.log('Express server listening on port 3000')
+app.listen(9999, function () {
+  console.log('Express server listening on port 9999')
 })
