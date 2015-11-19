@@ -13,7 +13,7 @@ app.use(methodOverride())
 mongoose.connect('mongodb://huyugui.eicp.net/restify')
 
 restify.serve(router, mongoose.model('Student'))
-
+restify.serve(router, mongoose.model('Book'))
 app.use(router)
 
 app.listen(9999, function () {

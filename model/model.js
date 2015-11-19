@@ -59,7 +59,15 @@ var AddressSchema =  new mongoose.Schema(
         blueNumber:String,
         Name:String
     });
-
+var BookSchema =  new mongoose.Schema(
+    {
+        bookName : String,
+        bookAuthor : String,
+        bookPrice : String,
+        bookId : String,
+        bookType : String
+    });
+mongoose.model('Book', BookSchema);
 mongoose.model('School', SchoolSchema);
 mongoose.model('College', CollegeSchema);
 mongoose.model('Profession', ProfessionSchema);
